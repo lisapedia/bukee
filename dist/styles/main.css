@@ -396,6 +396,39 @@ ul {
   padding-right: 15px;
 }
 
+body {
+  font-family: 'Roboto Slab', serif;
+}
+
+.page-main {
+  background-image: url(../img/bg-main.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__logo {
+  display: block;
+  width: 137px;
+  height: 28px;
+  background-image: url(../img/logo.svg);
+}
+
+.header-list {
+  list-style-type: none;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.header-list__item {
+  margin-left: 15px;
+}
+
 @media screen and (min-width: 576px) {
   .container {
     max-width: 510px;
