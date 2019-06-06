@@ -507,6 +507,10 @@ body {
   margin-bottom: 19px;
 }
 
+.block-text small {
+  font-style: italic;
+}
+
 .block-book {
   display: flex;
   justify-content: flex-start;
