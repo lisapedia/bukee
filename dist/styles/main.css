@@ -398,6 +398,13 @@ ul {
 
 body {
   font-family: 'Roboto Slab', serif;
+  font-size: 15px;
+  line-height: 24px;
+}
+
+h3 {
+  font-size: 24px;
+  letter-spacing: 1.2px;
 }
 
 .wrap {
@@ -415,6 +422,25 @@ body {
 
 .page {
   padding-top: 161px;
+  padding-bottom: 160px;
+}
+
+.page_gray {
+  background-color: #f5f6fa;
+}
+
+.page__title {
+  font-size: 48px;
+  text-align: center;
+  margin-bottom: 25px;
+  letter-spacing: 2px;
+}
+
+.page__subtitle {
+  color: #65e496;
+  text-align: center;
+  font-size: 18px;
+  letter-spacing: 0.9px;
 }
 
 .header {
@@ -473,7 +499,7 @@ body {
   margin-bottom: 30px;
 }
 
-.block-text__name-top {
+.block-text__name_top {
   margin-top: 16px;
   margin-left: 0;
 }
@@ -572,7 +598,101 @@ body {
   font-weight: 100;
   font-size: 80px;
   color: #65e496;
-  margin-bottom: 12px;
+  margin-bottom: 45px;
+}
+
+.block-about {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 82px;
+}
+
+.block-about h3 {
+  margin-bottom: 20px;
+}
+
+.block-about p {
+  font-family: 'Open Sans', serif;
+  letter-spacing: 0.6px;
+}
+
+.block-about-text {
+  flex-basis: 41%;
+}
+
+.block-about-text__links {
+  display: flex;
+  align-items: center;
+}
+
+.block-about-text__links p {
+  font-family: 'Roboto Slab', serif;
+  font-size: 18px;
+  font-weight: 700;
+  margin-right: 15px;
+}
+
+.block-about-text__links ul {
+  list-style-type: none;
+  display: flex;
+}
+
+.block-about-text__links ul i {
+  color: #65e496;
+  margin: 0 6px;
+}
+
+.block-about-table {
+  flex-basis: 49%;
+}
+
+.block-about-table button {
+  width: 136px;
+  height: 48px;
+  background-color: #65e496;
+  color: #fff;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  box-shadow: 0px 2px 0px 0px #adedbb;
+  margin-top: 29px;
+}
+
+.block-about-table button:hover {
+  cursor: pointer;
+}
+
+.block-about-table__list {
+  margin: 0;
+  padding: 0;
+  counter-reset: list;
+  column-count: 2;
+}
+
+.block-about-table__list > li {
+  position: relative;
+  padding-left: 36px;
+  counter-increment: list;
+  list-style-type: none;
+  margin-bottom: 8px;
+  letter-spacing: 0.7px;
+}
+
+.block-about-table__list > li::before {
+  content: counter(list) ". ";
+}
+
+.block-about-table__list > li::after {
+  content: "+";
+  font-family: 'Open Sans', serif;
+  font-size: 15px;
+  line-height: 22px;
+  position: absolute;
+  left: 0;
+  top: 1px;
+  background-color: #65e496;
+  color: #fff;
+  padding: 0px 7px;
 }
 
 @media screen and (min-width: 576px) {
