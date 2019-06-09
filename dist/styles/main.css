@@ -496,7 +496,7 @@ h3 {
   font-family: 'Open Sans', serif;
   font-size: 18px;
   letter-spacing: 0.7px;
-  margin-bottom: 30px;
+  margin-bottom: 43px;
 }
 
 .block-text__name_top {
@@ -515,7 +515,7 @@ h3 {
   display: block;
   color: #65e496;
   font-size: 18px;
-  margin-top: 9px;
+  margin-top: 23px;
   letter-spacing: 0.9px;
 }
 
@@ -553,11 +553,41 @@ h3 {
 
 .block-book-demo {
   display: block;
+  position: relative;
   width: 447px;
   height: 643px;
   background-image: url(../img/book.png);
   background-repeat: no-repeat;
   flex-basis: 500px;
+}
+
+.block-book-demo__title {
+  font-size: 36px;
+  text-transform: uppercase;
+  position: absolute;
+  left: calc(50% - 118px);
+  top: 118px;
+  letter-spacing: 1.4px;
+}
+
+.block-book-demo__title span {
+  font-family: 'Open Sans', serif;
+  font-size: 14px;
+  color: #65e496;
+  display: block;
+  text-transform: initial;
+  letter-spacing: 0.7px;
+  margin-top: 10px;
+}
+
+.block-book-demo__author {
+  font-family: 'Open Sans', serif;
+  font-size: 14px;
+  color: #65e496;
+  position: absolute;
+  bottom: 52px;
+  left: 87px;
+  letter-spacing: 0.7px;
 }
 
 .block-author {
@@ -639,6 +669,7 @@ h3 {
 
 .block-about-text__links ul i {
   color: #65e496;
+  font-size: 18px;
   margin: 0 6px;
 }
 
@@ -690,9 +721,92 @@ h3 {
   position: absolute;
   left: 0;
   top: 1px;
-  background-color: #65e496;
+  background-color: #5fc9b3;
   color: #fff;
   padding: 0px 7px;
+}
+
+.block-books {
+  display: flex;
+  justify-content: space-around;
+}
+
+.block-books-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.block-books-item__cover {
+  width: 269px;
+  height: 409px;
+  background-image: url(../img/book_small.png);
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.block-books-item__cover h4 {
+  color: #fff;
+  text-transform: uppercase;
+  position: absolute;
+  top: 84px;
+  left: 75px;
+}
+
+.block-books-item__cover h4 span {
+  color: #65e496;
+  text-transform: initial;
+  display: block;
+  font-weight: 400;
+}
+
+.block-books-item__cover p {
+  color: #65e496;
+  position: absolute;
+  bottom: 35px;
+  left: 80px;
+}
+
+.block-books-item__desc {
+  text-align: center;
+  padding: 34px 40px 0 40px;
+  margin-bottom: 88px;
+}
+
+.block-books-item__desc h5 {
+  font-size: 24px;
+  font-weight: 700;
+  text-transform: capitalize;
+  color: #44444f;
+}
+
+.block-books-item__desc p {
+  font-size: 15px;
+  color: #44444f;
+}
+
+.block-books-item__desc a {
+  font-family: 'Open Sans', serif;
+  text-transform: uppercase;
+  color: #65e496;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.block-books__btn {
+  display: block;
+  background-color: #65e496;
+  color: #fff;
+  text-decoration: none;
+  max-width: 250px;
+  border-radius: 3px;
+  text-align: center;
+  font-size: 18px;
+  margin-top: 48px;
+  padding: 14px 0;
+  letter-spacing: 0.7px;
+  margin: 0 auto;
+  box-shadow: 0px 2px 0px 0px #adedbb;
 }
 
 @media screen and (min-width: 576px) {
